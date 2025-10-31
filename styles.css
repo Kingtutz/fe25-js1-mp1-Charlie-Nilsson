@@ -1,0 +1,14 @@
+.head{
+  color: hsl(195, 41%, 40%);
+  text-align: center;
+}
+.ol{
+  max-width: 100px;
+  border: purple 10px solid;
+  list-style: none;
+  lis
+}
+.tablediv{
+border: black 1px solid;
+
+}
