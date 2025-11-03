@@ -1,3 +1,5 @@
+//första delen
+
 for (let i = 0; i < 5; i++) {
   const h1 = document.createElement('h1')
   document.body.appendChild(h1)
@@ -9,31 +11,73 @@ for (let i = 0; i < 5; i++) {
   console.log(hue)
   console.log(i)
 }
-
-const tableDiv = document.createElement('div')
-document.body.appendChild(tableDiv)
-tableDiv.classList.add('tablediv')
-
-const ol = document.createElement('ol')
-tableDiv.appendChild(ol)
-ol.classList.add('ol')
-for (let i = 0; i < 10; i++) {
-  const li = document.createElement('li')
-  ol.appendChild(li)
-  li.innerText = `${i}`
-  const hue = i * 10
-  if (i % 2 === 0) {
-    li.style.background = 'black'
-    li.style.color = 'white'
+// andra delen
+// huvud div
+const mainDiv = document.createElement('div')
+document.body.appendChild(mainDiv)
+mainDiv.classList.add('maindiv')
+// 3xdivloop
+for (let i = 0; i < 3; i++) {
+  const pDiv = document.createElement('div')
+  mainDiv.appendChild(pDiv)
+  pDiv.classList.add('pdiv')
+  // pdiv1
+  if (i === 0) {
+    for (let j = 0; j < 10; j++) {
+      const p1 = document.createElement('p')
+      pDiv.appendChild(p1)
+      p1.innerText = j
+      if (j % 2 === 0) {
+        p1.classList.add('bw')
+        console.log(j)
+      }
+      if (j === 4) {
+        p1.style.backgroundColor = 'purple'
+      }
+    }
   }
-}
-for (let i = 0; i < 10; i++) {
-  const li = document.createElement('li')
-  ol.appendChild(li)
-  li.innerText = `${i}`
-  const hue = i * 10
-  if (i % 2 === 0) {
-    li.style.background = 'black'
-    li.style.color = 'white'
+  // pDiv2
+  if (i === 1) {
+    for (let j = 9; j > -1; j--) {
+      const p2 = document.createElement('p')
+      pDiv.appendChild(p2)
+      p2.innerText = j
+      p2.classList.add('p2')
+      if (j % 2 === 0) {
+        p2.classList.add('bw')
+        console.log(j)
+      }
+      if (j === 8) {
+        p2.style.backgroundColor = 'purple'
+      }
+    }
+  }
+  // pdiv 3
+  if (i === 2) {
+    const valörer = [
+      'ett',
+      'två',
+      'tre',
+      'fyra',
+      'fem',
+      'sex',
+      'sju',
+      'åtta',
+      'nio',
+      'tio'
+    ]
+    for (let j = 0; j < 10; j++) {
+      const p3 = document.createElement('p')
+      pDiv.appendChild(p3)
+      p3.innerText = valörer[j]
+      p3.classList.add('p3')
+      if (j % 2 === 0) {
+        p3.classList.add('bw')
+        console.log(j)
+      }
+      if (valörer[j] === 'sex') {
+        p3.style.backgroundColor = 'purple'
+      }
+    }
   }
 }
