@@ -5,7 +5,6 @@
 .pdiv{
   border: purple 10px solid;
   margin: 50px;
-  
 }
 .maindiv{
 border: black 1px solid;
@@ -16,7 +15,6 @@ justify-content: space-around;
 p{
  margin: 0;
   width: 65px;
-  
 }
 .bw{
   background-color: black;

@@ -66,6 +66,7 @@ for (let i = 0; i < 3; i++) {
       'nio',
       'tio'
     ]
+
     for (let j = 0; j < 10; j++) {
       const p3 = document.createElement('p')
       pDiv.appendChild(p3)
